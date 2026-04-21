@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    @apply scroll-smooth;
+  }
+}
+
+@keyframes press-marquee-scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.press-track {
+  animation: press-marquee-scroll 14s linear infinite;
+  will-change: transform;
+  transform: translateZ(0);
+}
+
+.press-marquee:hover .press-track {
+  animation-play-state: paused;
+}
+
+@media (min-width: 768px) {
+  .press-track {
+    animation-duration: 20s;
+  }
+}
+
+@media (min-width: 1024px) {
+  .press-track {
+    animation-duration: 28s;
+  }
+}
