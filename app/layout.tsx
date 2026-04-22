@@ -3,8 +3,10 @@ import "./globals.css";
 import { WaitlistModalProvider } from "@/lib/useWaitlistModal";
 import WaitlistModal from "@/components/WaitlistModal";
 
-
 export const metadata: Metadata = {
+  icons: {
+    icon: "/WaslLogo-App.png"
+  },
   title: "Wasl — USD accounts for remote workers",
   description:
     "Open a USD account for remote workers and freelancers globally. Receive payments from Upwork, Deel, Fiverr and more.",

@@ -9,8 +9,7 @@ export default function Nav() {
     <nav className="nav">
       <div className="container nav-inner">
         <a href="#" className="brand">
-          <BrandMark />
-          Wasl
+          <BrandMark height={42} />
         </a>
         <div className="nav-links">
           <a href="#how">How it works</a>

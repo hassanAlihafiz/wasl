@@ -13,8 +13,7 @@ export default function Footer() {
         <div className="foot-grid">
           <div className="foot-brand">
             <a href="#" className="brand">
-              <BrandMark />
-              Wasl
+              <BrandMark height={60} width={170} />
             </a>
             <p>
               A USD account for remote workers and freelancers — globally. Built with a Wasl between
