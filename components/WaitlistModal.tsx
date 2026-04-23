@@ -1,7 +1,9 @@
 "use client";
 
+import { X } from "lucide-react";
 import { useWaitlistModal } from "@/lib/useWaitlistModal";
 import WaitlistForm from "./WaitlistForm";
+import BrandMark from "./BrandMark";
 
 export default function WaitlistModal() {
   const { open, closeModal } = useWaitlistModal();
@@ -17,15 +19,17 @@ export default function WaitlistModal() {
       }}
     >
       <div className="modal">
-        <button
-          className="modal-close"
-          type="button"
-          onClick={closeModal}
-          aria-label="Close"
-        >
-          ×
-        </button>
-        <div className="modal-mark">و</div>
+        <div className="modal-header">
+          <BrandMark height={42} />
+          <button
+            className="modal-close"
+            type="button"
+            onClick={closeModal}
+            aria-label="Close"
+          >
+            <X />
+          </button>
+        </div>
         <h3 id="wl-title">
           Join the <em>waitlist.</em>
         </h3>

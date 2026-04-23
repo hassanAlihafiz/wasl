@@ -38,16 +38,14 @@ html::before {
   inset: 0;
   z-index: 0;
   pointer-events: none;
-  background: linear-gradient(
-    125deg,
-    #ffffff 0%,
-    #fffdf6 18%,
-    #fff4cc 36%,
-    #fffef8 54%,
-    #ffeaa3 72%,
-    #eef2ff 88%,
-    #ffffff 100%
-  );
+  background: linear-gradient(125deg,
+      #ffffff 0%,
+      #fffdf6 18%,
+      #fff4cc 36%,
+      #fffef8 54%,
+      #ffeaa3 72%,
+      #eef2ff 88%,
+      #ffffff 100%);
   background-size: 320% 320%;
   animation: bg-gradient-shift var(--gradient-anim-duration) ease-in-out infinite
 }
@@ -1325,6 +1323,17 @@ footer {
   opacity: 1
 }
 
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 18px;
+}
+
+.modal-header .modal-close {
+  flex-shrink: 0;
+}
+
 .modal {
   background: var(--bg);
   border-radius: 24px;
@@ -1343,9 +1352,6 @@ footer {
 }
 
 .modal-close {
-  position: absolute;
-  top: 16px;
-  right: 16px;
   width: 36px;
   height: 36px;
   border-radius: 50%;
