@@ -1,5 +1,6 @@
 "use client";
 
+import { ArrowRight } from "lucide-react";
 import BrandMark from "./BrandMark";
 import { useWaitlistModal } from "@/lib/useWaitlistModal";
 
@@ -18,7 +19,7 @@ export default function Nav() {
           <a href="#waitlist">Waitlist</a>
         </div>
         <button type="button" className="btn btn-primary" onClick={openModal}>
-          Join waitlist →
+          Join waitlist <ArrowRight size={12} className=" h-2" />
         </button>
       </div>
     </nav>
