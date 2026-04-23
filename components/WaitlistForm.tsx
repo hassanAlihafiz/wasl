@@ -2,6 +2,7 @@
 
 import { useState, type FormEvent } from "react";
 import { getSupabaseBrowserClient } from "@/lib/supabase/client";
+import { ArrowRight } from "lucide-react";
 
 export default function WaitlistForm({ id }: { id?: string }) {
   const [done, setDone] = useState(false);
@@ -50,7 +51,8 @@ export default function WaitlistForm({ id }: { id?: string }) {
           autoComplete="email"
         />
         <button type="submit" disabled={submitting}>
-          {submitting ? "…" : "Join waitlist →"}
+          {submitting ? "…" : "Join waitlist"}
+          {!submitting ? <ArrowRight size={14} aria-hidden /> : null}
         </button>
         <span className="done-msg">✓ You&apos;re on the list — شكراً</span>
       </form>

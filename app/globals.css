@@ -357,6 +357,10 @@ h1.display .ar-inline {
 }
 
 .waitlist button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
   background: var(--ink);
   color: var(--yellow);
   border: 0;
@@ -364,6 +368,7 @@ h1.display .ar-inline {
   border-radius: 999px;
   font-weight: 500;
   font-size: 14px;
+  line-height: 1;
   cursor: pointer;
   font-family: inherit;
   transition: background .2s

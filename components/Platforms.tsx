@@ -1,3 +1,5 @@
+import { ArrowRight } from "lucide-react";
+
 const PLATFORMS: Array<{ num: string; name: string; tag: string }> = [
   { num: "01", name: "Upwork", tag: "MILESTONES · HOURLY" },
   { num: "02", name: "Deel", tag: "EOR · CONTRACTOR" },
@@ -38,7 +40,7 @@ export default function Platforms() {
                   <span className="num">{p.num}</span>
                   <span className="name">{p.name}</span>
                   <span className="tag">{p.tag}</span>
-                  <span className="arrow">→</span>
+                  <span className="arrow"><ArrowRight size={14}  /></span>
                 </a>
               ))}
             </div>

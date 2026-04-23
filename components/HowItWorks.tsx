@@ -1,3 +1,5 @@
+import { ArrowRight, Check, Plus } from "lucide-react";
+
 interface Step {
   n: string;
   title: string;
@@ -12,9 +14,7 @@ const STEPS: Step[] = [
     title: "Open in 6 minutes",
     body: "Download Wasl, snap your ID, and verify with a selfie. Your USD account details are ready before your coffee is.",
     icon: (
-      <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
-        <path d="M8 2v12M2 8h12" stroke="currentColor" strokeWidth="1.4" />
-      </svg>
+      <Plus size={14} aria-hidden />
     ),
   },
   {
@@ -23,9 +23,7 @@ const STEPS: Step[] = [
     body: "Share your Wasl USD details with clients, or link platforms like Upwork, Deel, Fiverr, and Toptal in one tap.",
     gold: true,
     icon: (
-      <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
-        <path d="M3 8l3 3 6-6" stroke="currentColor" strokeWidth="1.4" fill="none" />
-      </svg>
+      <Check size={14} aria-hidden />
     ),
   },
   {
@@ -33,9 +31,7 @@ const STEPS: Step[] = [
     title: "Spend or convert",
     body: "Hold dollars, spend with your Wasl card, or convert to your local currency at a fair, transparent FX rate.",
     icon: (
-      <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
-        <path d="M2 8h10m0 0l-4-4m4 4l-4 4" stroke="currentColor" strokeWidth="1.4" fill="none" />
-      </svg>
+      <ArrowRight size={14} aria-hidden />
     ),
   },
 ];

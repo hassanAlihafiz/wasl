@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import AccountCard from "./AccountCard";
 import WaitlistForm from "./WaitlistForm";
 import { HEADLINES, TWEAK_DEFAULTS, type HeadlineKey } from "@/lib/tweaks";
+import { Lock } from "lucide-react";
 
 export default function Hero() {
   // Start from the default; TweaksPanel updates CSS vars + dispatches a custom
@@ -44,7 +45,8 @@ export default function Hero() {
           </p>
           <WaitlistForm id="waitlist" />
           <div className="hero-trust">
-            <span>🔒 Bank-grade security</span>
+            <span>
+              <Lock size={12} className=" h-2" /> Bank-grade security</span>
             <span className="divider"></span>
             <span>Free to join · No spam</span>
             <span className="divider"></span>
