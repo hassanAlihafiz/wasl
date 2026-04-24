@@ -2,12 +2,14 @@ import type { Metadata } from "next";
 import "./globals.css";
 import { WaitlistModalProvider } from "@/lib/useWaitlistModal";
 import WaitlistModal from "@/components/WaitlistModal";
+import Nav from "@/components/Nav";
+import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
   icons: {
     icon: "/WaslLogo-App.png"
   },
-  title: "Wasl — USD accounts for remote workers",
+  title: "Wasl — recieve dollars from Upwork",
   description:
     "Open a USD account for remote workers and freelancers globally. Receive payments from Upwork, Deel, Fiverr and more.",
 };
@@ -22,7 +24,7 @@ const FONTS_HREF =
     "family=Playfair+Display:ital,wght@0,400;0,700;1,400",
     "family=DM+Serif+Display:ital@0;1",
     "family=Space+Grotesk:wght@300;400;500;600;700",
-    "family=IBM+Plex+Sans:wght@300;400;500;600;700",
+    "family=IBM+Plex+Sans:wght@300;400;500;600;700",, 
     "family=IBM+Plex+Mono:wght@400;500",
     "family=Manrope:wght@300;400;500;600;700",
     "family=Fraunces:ital,wght@0,400;0,600;1,400",
@@ -39,7 +41,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       </head>
       <body>
         <WaitlistModalProvider>
+          <Nav />
           {children}
+          <Footer />
           <WaitlistModal />
           {/* <TweaksPanel /> */}
         </WaitlistModalProvider>
