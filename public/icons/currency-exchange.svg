@@ -1,0 +1,11 @@
+<svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M14 20H30C33.3137 20 36 22.6863 36 26V32C36 35.3137 33.3137 38 30 38H14C10.6863 38 8 35.3137 8 32V26C8 22.6863 10.6863 20 14 20Z" fill="#E5E5E5" stroke="#111" stroke-width="3"></path>
+  <path d="M16 26H28C29.1046 26 30 26.8954 30 28V30C30 31.1046 29.1046 32 28 32H16C14.8954 32 14 31.1046 14 30V28C14 26.8954 14.8954 26 16 26Z" fill="#3DDC64" stroke="#111" stroke-width="3"></path>
+  <path d="M22 32C23.6569 32 25 30.6569 25 29C25 27.3431 23.6569 26 22 26C20.3431 26 19 27.3431 19 29C19 30.6569 20.3431 32 22 32Z" fill="#E5E5E5" stroke="#111" stroke-width="2"></path>
+  <path d="M13 16L19 10L25 16" stroke="#111" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
+  <path d="M19 11V22" stroke="#111" stroke-width="3" stroke-linecap="round"></path>
+  <path d="M29 34L35 40L41 34" stroke="#111" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
+  <path d="M35 39V28" stroke="#111" stroke-width="3" stroke-linecap="round"></path>
+  <text x="27" y="18" font-size="12" font-weight="700" fill="#F4B400" stroke="#111" stroke-width="0.5">$</text>
+  <text x="8" y="18" font-size="12" font-weight="700" fill="#F4B400" stroke="#111" stroke-width="0.5">¥</text>
+</svg>

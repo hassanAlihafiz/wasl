@@ -1,13 +1,14 @@
 "use client";
+import { Rocket , CreditCard , Link , ShieldBan, DollarSign } from "lucide-react";
 import { useState } from "react";
 
 const categories = [
-    { icon: "🚀", title: "Getting started", desc: "Account setup, verification, and your first payment", count: "8 articles" },
-    { icon: "💳", title: "Your USD account", desc: "Routing numbers, account details, and balances", count: "12 articles" },
-    { icon: "🔗", title: "Platform integrations", desc: "Upwork, Deel, Fiverr, Toptal, and direct wire", count: "10 articles" },
-    { icon: "💱", title: "Fees & conversion", desc: "How our pricing works and FX rates explained", count: "6 articles" },
-    { icon: "🛡️", title: "Security & identity", desc: "KYC, verification, and keeping your account safe", count: "9 articles" },
-    { icon: "💸", title: "Spending & card", desc: "Using your Wasl card virtually and physically", count: "7 articles" },
+    { icon: <Rocket />, title: "Getting started", desc: "Account setup, verification, and your first payment", count: "8 articles" },
+    { icon: <CreditCard />, title: "Your USD account", desc: "Routing numbers, account details, and balances", count: "12 articles" },
+    { icon: <Link />, title: "Platform integrations", desc: "Upwork, Deel, Fiverr, Toptal, and direct wire", count: "10 articles" },
+    { icon: <img src="/icons/currency-exchange.svg" alt="currency exchange" />, title: "Fees & conversion", desc: "How our pricing works and FX rates explained", count: "6 articles" },
+    { icon: <ShieldBan />, title: "Security & identity", desc: "KYC, verification, and keeping your account safe", count: "9 articles" },
+    { icon: <DollarSign />, title: "Spending & card", desc: "Using your Wasl card virtually and physically", count: "7 articles" },
 ];
 
 const faqGroups = [
