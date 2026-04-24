@@ -38,7 +38,7 @@ export default function WaitlistForm({ id }: { id?: string }) {
     }
   };
 
-  return (
+  return (  
     <>
       <form id={id} className={`waitlist${done ? " done" : ""}`} onSubmit={onSubmit}>
         <input

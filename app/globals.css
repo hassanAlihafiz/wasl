@@ -167,6 +167,11 @@ button {
   border-bottom: 1px solid var(--line)
 }
 
+.nav.nav-dark {
+  background: #0d0d0d;
+  border-bottom: 1px solid rgba(201, 168, 76, 0.22);
+}
+
 .nav-inner {
   display: flex;
   align-items: center;
@@ -223,6 +228,14 @@ button {
   color: var(--ink-2)
 }
 
+.nav.nav-dark .nav-links {
+  color: #c6c6c6;
+}
+
+.nav.nav-dark .nav-links a:hover {
+  color: var(--yellow);
+}
+
 .btn {
   display: inline-flex;
   align-items: center;
@@ -242,6 +255,15 @@ button {
 .btn-primary:hover {
   background: #000;
   transform: translateY(-1px)
+}
+
+.nav.nav-dark .btn-primary {
+  background: var(--yellow);
+  color: var(--ink);
+}
+
+.nav.nav-dark .btn-primary:hover {
+  background: var(--yellow-deep);
 }
 
 .btn-yellow {
