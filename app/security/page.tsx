@@ -1,10 +1,10 @@
 "use client";
 
 const badges = [
-    { icon: "🏦", title: "FDIC-insured partner bank", desc: "Deposits protected up to $250,000" },
-    { icon: "🔒", title: "256-bit AES encryption", desc: "All data encrypted at rest and in transit" },
-    { icon: "✅", title: "PCI DSS compliant", desc: "Card data handled to payment industry standards" },
-    { icon: "📋", title: "FinCEN registered", desc: "Compliant with US anti-money laundering laws" },
+    { icon: <img src="/icons/office-icon.svg" alt="office" />, title: "FDIC-insured partner bank", desc: "Deposits protected up to $250,000" },
+    { icon: <img src="/icons/locked.svg" alt="locked" />, title: "256-bit AES encryption", desc: "All data encrypted at rest and in transit" },
+    { icon: <img src="/icons/green-check.svg" alt="green check" />, title: "PCI DSS compliant", desc: "Card data handled to payment industry standards" },
+    { icon: <img src="/icons/clip-board.svg" alt="clipboard" />, title: "FinCEN registered", desc: "Compliant with US anti-money laundering laws" },
 ];
 
 const pillars = [
